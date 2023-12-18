@@ -7,4 +7,4 @@ Simple web app to upload image and test hit APIs concurrently
 
 ## How to Run
 
-    go run cmd/main.go# fiber-upload-file
+    go run cmd/main.go
