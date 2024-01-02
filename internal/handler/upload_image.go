@@ -24,7 +24,7 @@ func (h *Handler) UploadImage(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusBadRequest).JSON(validateRes)
 	}
 
-	err = h.Usecase.SaveFile(c, file)
+	err = h.Usecase.SaveFile(file)
 	if err != nil {
 		return c.Status(fiber.StatusInternalServerError).JSON(model.Response{
 			Success: false,
